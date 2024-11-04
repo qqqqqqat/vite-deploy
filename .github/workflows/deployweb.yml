@@ -22,12 +22,6 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Install Prettier
-        run: npm install --save-dev --save-exact prettier
-        
-      - name: Format code with Prettier
-        run: npx prettier . --write         
-        
       - name: Build project
         run: npm run build
 
